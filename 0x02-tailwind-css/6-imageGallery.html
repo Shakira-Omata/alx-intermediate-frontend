@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout with Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+        <section class="lg:col-span-2 flex">
+            <div class="bg-red-200 p-4 w-1/2">Flexbox Item 1</div>
+            <div class="bg-red-400 p-4 w-1/2">Flexbox Item 2</div>
+        </section>
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+
+    <!-- Image Gallery Section -->
+    <section class="mt-8 px-4">
+        <h2 class="text-2xl font-bold mb-6 text-gray-800">Image Gallery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop" 
+                     alt="Gallery Image 1" 
+                     class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop" 
+                     alt="Gallery Image 2" 
+                     class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&h=600&fit=crop" 
+                     alt="Gallery Image 3" 
+                     class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=600&fit=crop" 
+                     alt="Gallery Image 4" 
+                     class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=800&h=600&fit=crop" 
+                     alt="Gallery Image 5" 
+                     class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=600&fit=crop" 
+                     alt="Gallery Image 6" 
+                     class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+</body>
+</html>
