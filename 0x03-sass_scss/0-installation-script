@@ -1,0 +1,6 @@
+1. Opened Git Bash terminal in the project directory
+2. Navigated to 0x03-sass_scss directory: cd 0x03-sass_scss
+3. Attempted to install sass@3.7.4 as instructed but the version doesn't exist
+4. Installed the latest stable version of Sass instead: npm install sass
+5. Verified installation: npx sass --version
+6. Created this installation script file: touch 0-installation-script
