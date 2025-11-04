@@ -1,3 +1,4 @@
+
 1. Opened Git Bash terminal in the project directory
 2. Navigated to 0x03-sass_scss directory: cd 0x03-sass_scss
 3. Attempted to install sass@3.7.4 as instructed but the version doesn't exist
